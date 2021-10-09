@@ -13,27 +13,27 @@ The database has 2 collections:
 <br><br>
 Use postman to request APIs
 ### End points
-POST:  /users :   <br>
+POST:  /users :  To create an user <br>
 _{  <br>
     "name": "jarun madhesh",<br>
     "email":"jarunmadhesh.gmail.com",<br>
     "password":"temporarypassword"<br>
 }_<br> 
-GET:  /users  :   <br>
-GET:  /users/<userid> :   <br>
-DELETE:  /users :  <br>
+GET:  /users  : To list all the users. _Used for production and debugging._  <br>
+GET:  /users/:userid :  To fetch the user by userID <br>
+DELETE:  /users : To delete all the users._Used for production and debugging._ <br>
 <br>
-POST:  /posts :   <br>
+POST:  /posts : To create a post  <br>
 _{<br>
     "accountid": "61618edfdb5a84faf07979a6",<br>
     "caption": "Sun is bright.",<br>
     "imageurl":"url1 goes here",<br>
     "posted_Timestamp" : "2012-10-31 15:50:13.793654 +0000 UTC"<br>
 }_<br> 
-GET:  /posts  :   <br>
-GET:  /posts/<postId> :   <br>
-GET:  /posts/<userId>/users :   <br>
-DELETE:  /posts :  <br>
+GET:  /posts  : To get all the posts. _Used for production and debugging._  <br>
+GET:  /posts/:postId :  To fetch the post by post ID  <br>
+GET:  /posts/:userId/users :  To fetch all the posts posted by a particular user of the given userID  <br>
+DELETE:  /posts : To delete all the posts by all the users.. _Used for production and debugging._ <br>
 <br>
 
 
