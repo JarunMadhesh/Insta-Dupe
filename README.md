@@ -39,11 +39,21 @@ DELETE:  /posts :  <br>
 
 
 ## packages used
-1. mongo-driver <br>https://github.com/mongodb/mongo-go-driver
-2. encoding/json
-3. context
-4. fmt
-5. log
-6. net/http
-7. time
-8. crypto
+1. context
+2. fmt
+3. log
+4. net/http
+5. time
+6. crypto
+7. crypto/aes
+8. crypto/cipher
+9. crypto/rand
+10. encoding/base64
+11. encoding/json
+12. errors
+13. io
+14. github.com/julienschmidt/httprouter
+15. go.mongodb.org/mongo-driver/bson
+16.	go.mongodb.org/mongo-driver/bson/primitive
+17.	go.mongodb.org/mongo-driver/mongo
+18.	go.mongodb.org/mongo-driver/mongo/options
