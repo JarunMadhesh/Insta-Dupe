@@ -82,10 +82,10 @@ func (uc UserController) addUser(response http.ResponseWriter, request *http.Req
 	json.NewDecoder(request.Body).Decode(&user)
 
 	// Encrypting the password
-	password := []byte(user.Password)
-	key := []byte("This is a key for the very secret password")
-	password, _ = encrypt(key, password)
-	user.Password = string(password)
+	// password := []byte(user.Password)
+	// key := []byte("This is a key for the very secret password")
+	// password, _ = encrypt(key, password)
+	// user.Password = string(password)
 	//
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
 	result, _ := uc.collection.InsertOne(ctx, user)
@@ -135,10 +135,10 @@ func (uc UserController) getSingleUserbyID(response http.ResponseWriter, request
 		return
 	}
 	// Decrypting the password
-	password := []byte(user.Password)
-	key := []byte("This is a key for the very secret password")
-	password, _ = decrypt(key, password)
-	user.Password = string(password)
+	// password := []byte(user.Password)
+	// key := []byte("This is a key for the very secret password")
+	// password, _ = decrypt(key, password)
+	// user.Password = string(password)
 	//
 	json.NewEncoder(response).Encode(user)
 }
