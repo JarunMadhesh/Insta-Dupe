@@ -1,6 +1,6 @@
 # Instagram-Dupe Backend
 
-RestFull APIs for MongoDB using GoLang
+RestFull API for MongoDB using GoLang
 
 ## To use it
 Clone the code and set up MongoDB locally on your machine.
